@@ -1,0 +1,14 @@
+.btn:hover {
+    transform: scale(1.05);
+    border: 2px solid black !important;
+    color: black !important;
+    font-weight: bolder;
+    background-color: cadetblue !important;
+}
+
+#apply:hover {
+    font-weight: bolder !important;
+    color: black !important;
+    transform: scale(1.05) !important;
+    background-color: coral !important;
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping A mac</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <main>
+        <section class="w-100 container d-flex flex-row my-5 align-items-start justify-content-around">
+            <!-- left sided image div code  -->
+            <div class="left mac-photo w-50">
+                <img src="images/mac.png" class="img-fluid w-75" alt="macbook pc">
+            </div>
+
+            <!-- right sided buttons and logic code start here -->
+            <div class="right cash-count w-50 d-flex flex-column justify-content-start align-items-start">
+                <h2 class="fs-1"><strong> your Blue 24-inche iMac with Apple M1 chip.</strong></h2>
+                <p class="mb-5">Apple M1 Chip with 8 core CPU, with 4 performance cores, and 4 efficiently core, 7-core GPU, and 16 core Neural Engine 8GB unified memory with 256GB SSD storage , two THundebolts/ USB 4 ports, Magic mouse and Magic keyboard- US English.</p>
+
+                <!-- memory buttons' code start from here -->
+                <h5 class="fs-4 text-start">Memory</h5>
+                <div id="memory-btns" class=" d-flex flex-row mb-5 align-items-start justify-content-start">
+
+                    <button id="first-memory" class="btn btn-secondary me-3">8GB Unified Memory</button>
+                    <button id="second-memory" class="btn btn-secondary ">16GB Unified Memory</button>
+                </div>
+
+                <!-- storage buttons' code start from here -->
+                <h5>Storage</h5>
+                <div id="storage-btns" class=" d-flex flex-row mb-5 align-items-start justify-content-start">
+
+                    <button id="first-storage" class="btn btn-secondary ">256GB SSD Storage</button>
+                    <button id="second-storage" class="btn btn-secondary ms-3">512GB SSD Storage</button>
+                    <button id="third-storage" class="btn btn-secondary ms-3">1TB SSD Storage</button>
+                </div>
+
+                <!-- delivery buttons' code start form here -->
+                <h5 class="fs-4 text-start">Choose your Delivery Option</h5>
+                <div id="delivery-btns" class=" d-flex flex-row mb-5 align-items-start justify-content-start">
+
+                    <button id="first-delivery" class="btn btn-secondary me-3">Friday, Aug 25 FREE Prime delivery</button>
+                    <button id="second-delivery" class="btn btn-secondary ">Friday, Aug 21 Delivery Charge $20</button>
+                </div>
+
+                <!-- the count and calculations regarding to the purchase start from here  -->
+                <div class="calculation d-flex flex-row justify-content-start">
+                    <div class="left d-flex flex-column me-5">
+                        <h5>Best Price</h5>
+                        <hr>
+                        <h5>Extra Memory Cost</h5>
+                        <hr>
+                        <h5>Extra Storage Cost</h5>
+                        <hr>
+                        <h5>Deivery Cost</h5>
+                        <hr>
+                        <h5>Total Cost</h5>
+                    </div>
+                    <div class="right d-flex mb-5 flex-column ms-5">
+                        <h5>$1299</h5>
+                        <hr>
+                        <h5>$ <span id="memory-cost">0</span></h5>
+                        <hr>
+                        <h5>$ <span id="storage-cost">0</span></h5>
+                        <hr>
+                        <h5>$ <span id="delivery-cost">0</span></h5>
+                        <hr>
+                        <h5>$ <span id="total-cost">1299</span></h5>
+                    </div>
+
+                </div>
+
+                <!-- promo code related codes start from here -->
+                <div class="promo">
+                    <h5>Add the Promo Code</h5>
+                    <br>
+                    <input type="text" class="p-1" id="promo">
+                    <button id="apply" class="btn btn-danger ms-2">Apply</button>
+                </div>
+
+        </section>
+
+        <!-- this is the final price code afer/without discount -->
+        <section class="final-cost container">
+            <hr>
+            <h3 class="text-center">Total Cost : $<span id="final-cost">1299</span></h3>
+        </section>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
